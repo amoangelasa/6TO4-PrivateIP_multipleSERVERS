@@ -58,13 +58,12 @@
     <div dir="rtl">&bull; در روش انی کست میتوانید از آیپی ساخته شده در سرور های دیگر هم استفاده کنید اما پایداری بستگی به سرور های شما داره</div>
 
 
--------------------------------
 
-**اسکرین شات**
-<details>
-  <summary align="right">Click to reveal image</summary>
-  
-  <p align="right">
-    <img src="https://github.com/Azumi67/6TO4-PrivateIP/assets/119934376/bbc60d8e-0e86-4eb8-897d-e9f0f57306bc" alt="menu screen" />
-  </p>
-</details>
+![R (a2)](https://github.com/amoangelasa/PrivateIP-Tunnel/assets/119934376/716fd45e-635c-4796-b8cf-856024e5b2b2)
+**اسکریپت تانل**
+----------------
+
+
+```
+apt install curl -y && bash <(curl -Ls https://raw.githubusercontent.com/Azumi67/6TO4-PrivateIP_multipleSERVERS/main/6to4.sh --ipv4)
+```
