@@ -89,7 +89,6 @@ echo -e "\033[1;96m$logo\033[0m"
 }
 # art
 logo=$(cat << "EOF"
-\033[1;96m          
 EOF
 )
 function main_menu() {
@@ -97,7 +96,10 @@ function main_menu() {
         display_logo
         echo -e "\e[93m╔════════════════════════════════════════════════════════════════╗\e[0m"  
         echo -e "\e[93m║           ▌║█║▌│║▌│║▌║▌█║ \e[92mMain Menu\e[93m  ▌│║▌║▌│║║▌█║▌             ║\e[0m"   
-        echo -e "\e[93m╠════════════════════════════════════════════════════════════════╣\e[0m"                                 
+        echo -e "\e[93m╠════════════════════════════════════════════════════════════════╣\e[0m"                                
+		echo -e "1. \e[93mPrivate IP - [Signle Server]\e[0m"
+        echo -e "2. \e[96mPrivate IP - [5]Kharej | [1]IRAN\e[0m"
+		echo -e "3. \e[92mPrivate IP - [1]Kharej | [5]IRAN\e[0m"
         echo -e "4. \e[94m6to4\e[0m"
         echo -e "5. \e[93m6to4 [Anycast]\e[0m"
         echo -e "6. \e[91mUninstall\e[0m"
@@ -107,12 +109,21 @@ function main_menu() {
 
         case $choice in
 		    1)
-			    6to4_one
+			    single_private_ip
 				;;
             2)
-                6_to4_any
+                private_ip_3
                 ;;
-            3)
+			3)
+                private_ip_1
+                ;;				
+            4)
+                6to4_one
+                ;;
+            5)
+                6to4_any
+                ;;
+            6)
                 uninstall
                 ;;
             0)
@@ -131,10 +142,6 @@ function main_menu() {
 }
 function single_private_ip() {
     clear
-    echo $'\e[92m ^ ^\e[0m'
-    echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
-    echo $'\e[92m(   ) \e[93mPrivate IP Menu[1-server]\e[0m'
-    echo $'\e[92m "-"\e[93m═════════════════════\e[0m'
       printf "\e[93m╭───────────────────────────────────────╮\e[0m\n"
   echo $'\e[93mChoose what to do:\e[0m'
   echo $'1. \e[92mKharej\e[0m'
@@ -160,11 +167,6 @@ esac
 }
 function kharej_single_menu() {
      clear
-	  echo $'\e[92m ^ ^\e[0m'
-      echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
-      echo $'\e[92m(   ) \e[93mConfiguring kharej server\e[0m'
-      echo $'\e[92m "-"\e[93m══════════════════════════\e[0m'
-       display_logoo
       printf "\e[93m╭────────────────────────────────────────────────────────────────────────────────────╮\e[0m\n"
         echo $'\e[92m   Please make sure to remove any private IPs that you have created before proceeding\e[0m'
       printf "\e[93m╰────────────────────────────────────────────────────────────────────────────────────╯\e[0m\n"
@@ -291,11 +293,6 @@ echo "+---------------------------+"
 # private IP for Iran
 function iran_single_menu() {
  clear
-	  echo $'\e[92m ^ ^\e[0m'
-      echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
-      echo $'\e[92m(   ) \e[93mConfiguring Iran server\e[0m'
-      echo $'\e[92m "-"\e[93m══════════════════════════\e[0m'
-       display_logoo
       printf "\e[93m╭────────────────────────────────────────────────────────────────────────────────────╮\e[0m\n"
         echo $'\e[92m   Please make sure to remove any private IPs that you have created before proceeding\e[0m'
       printf "\e[93m╰────────────────────────────────────────────────────────────────────────────────────╯\e[0m\n"
@@ -422,11 +419,7 @@ echo "+---------------------------+"
 }
 function private_ip_3() {
     clear
-    echo $'\e[92m ^ ^\e[0m'
-    echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
-    echo $'\e[92m(   ) \e[92m[3]\e[93mKharej- \e[92m[1]\e[93mIran private ip Menu\e[0m'
-    echo $'\e[92m "-"\e[93m════════════════════════════════════\e[0m'
-	display_logoo
+
   echo -e "\e[93m.------------------------------------------------------------------------------------------------------------------------------------.\e[0m"
   echo -e "\e[93m| \e[92mEstablish the tunnel on  3 different kharej server and one iran server     \e[0m"
   echo -e "\e[93m|\e[0m Make sure to use the correct kharej ipv4 addresses on iran server as well                                                             \e[0m"
