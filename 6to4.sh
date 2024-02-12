@@ -105,7 +105,7 @@ function main_menu() {
         read -e -p $'\e[5mEnter your choice Please: \e[0m' choice
 
         case $choice in
-		   1)
+		    1)
 			    single_private_ip
 				;;
             2)
@@ -139,6 +139,10 @@ function main_menu() {
 }
 function single_private_ip() {
     clear
+    echo $'\e[92m ^ ^\e[0m'
+    echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
+    echo $'\e[92m(   ) \e[93mPrivate IP Menu[1-server]\e[0m'
+    echo $'\e[92m "-"\e[93m═════════════════════\e[0m'
       printf "\e[93m╭───────────────────────────────────────╮\e[0m\n"
   echo $'\e[93mChoose what to do:\e[0m'
   echo $'1. \e[92mKharej\e[0m'
@@ -164,6 +168,11 @@ esac
 }
 function kharej_single_menu() {
      clear
+	  echo $'\e[92m ^ ^\e[0m'
+      echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
+      echo $'\e[92m(   ) \e[93mConfiguring kharej server\e[0m'
+      echo $'\e[92m "-"\e[93m══════════════════════════\e[0m'
+       display_logoo
       printf "\e[93m╭────────────────────────────────────────────────────────────────────────────────────╮\e[0m\n"
         echo $'\e[92m   Please make sure to remove any private IPs that you have created before proceeding\e[0m'
       printf "\e[93m╰────────────────────────────────────────────────────────────────────────────────────╯\e[0m\n"
@@ -290,6 +299,11 @@ echo "+---------------------------+"
 # private IP for Iran
 function iran_single_menu() {
  clear
+	  echo $'\e[92m ^ ^\e[0m'
+      echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
+      echo $'\e[92m(   ) \e[93mConfiguring Iran server\e[0m'
+      echo $'\e[92m "-"\e[93m══════════════════════════\e[0m'
+       display_logoo
       printf "\e[93m╭────────────────────────────────────────────────────────────────────────────────────╮\e[0m\n"
         echo $'\e[92m   Please make sure to remove any private IPs that you have created before proceeding\e[0m'
       printf "\e[93m╰────────────────────────────────────────────────────────────────────────────────────╯\e[0m\n"
@@ -416,7 +430,11 @@ echo "+---------------------------+"
 }
 function private_ip_3() {
     clear
-
+    echo $'\e[92m ^ ^\e[0m'
+    echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
+    echo $'\e[92m(   ) \e[92m[3]\e[93mKharej- \e[92m[1]\e[93mIran private ip Menu\e[0m'
+    echo $'\e[92m "-"\e[93m════════════════════════════════════\e[0m'
+	display_logoo
   echo -e "\e[93m.------------------------------------------------------------------------------------------------------------------------------------.\e[0m"
   echo -e "\e[93m| \e[92mEstablish the tunnel on  3 different kharej server and one iran server     \e[0m"
   echo -e "\e[93m|\e[0m Make sure to use the correct kharej ipv4 addresses on iran server as well                                                             \e[0m"
@@ -463,6 +481,11 @@ esac
 }
 function kharej_private_menu() {
      clear
+	  echo $'\e[92m ^ ^\e[0m'
+      echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
+      echo $'\e[92m(   ) \e[93mConfiguring kharej server 1\e[0m'
+      echo $'\e[92m "-"\e[93m══════════════════════════\e[0m'
+	  display_logoo
      echo -e "\e[93m.------------------------------------------------------------------------------------------------------------------------------------.\e[0m"
      echo -e "\e[93m| \e[92mIf you have 5 different kharej servers, make a note and assing an ipv4 address for every server. eg : server 1 : kharej[1] ipv4      \e[0m"
      echo -e "\e[93m|\e[0m Since we have one iran server, it will be the same ipv4 for every kharej servers.                                                        \e[0m"
@@ -588,6 +611,11 @@ echo "+---------------------------+"
 #kharej2
 function kharej2_private_menu() {
      clear
+	  echo $'\e[92m ^ ^\e[0m'
+      echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
+      echo $'\e[92m(   ) \e[93mConfiguring kharej server 2\e[0m'
+      echo $'\e[92m "-"\e[93m══════════════════════════\e[0m'
+      echo ""
     display_notification $'\e[93mAdding private IP addresses for Kharej server 2...\e[0m'
     if [ -f "/etc/private.sh" ]; then
         rm /etc/private.sh
@@ -708,6 +736,11 @@ echo "+---------------------------+"
 #kharej3
 function kharej3_private_menu() {
      clear
+	  echo $'\e[92m ^ ^\e[0m'
+      echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
+      echo $'\e[92m(   ) \e[93mConfiguring kharej server 3\e[0m'
+      echo $'\e[92m "-"\e[93m══════════════════════════\e[0m'
+      echo ""
     display_notification $'\e[93mAdding private IP addresses for Kharej server 3...\e[0m'
     if [ -f "/etc/private.sh" ]; then
         rm /etc/private.sh
@@ -826,6 +859,11 @@ echo "+---------------------------+"
 #kharej4
 function kharej4_private_menu() {
      clear
+	  echo $'\e[92m ^ ^\e[0m'
+      echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
+      echo $'\e[92m(   ) \e[93mConfiguring kharej server 4\e[0m'
+      echo $'\e[92m "-"\e[93m══════════════════════════\e[0m'
+      echo ""
     display_notification $'\e[93mAdding private IP addresses for Kharej server 4...\e[0m'
     if [ -f "/etc/private.sh" ]; then
         rm /etc/private.sh
@@ -945,6 +983,11 @@ echo "+---------------------------+"
 #kharej5
 function kharej5_private_menu() {
      clear
+	  echo $'\e[92m ^ ^\e[0m'
+      echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
+      echo $'\e[92m(   ) \e[93mConfiguring kharej server 5\e[0m'
+      echo $'\e[92m "-"\e[93m══════════════════════════\e[0m'
+      echo ""
     display_notification $'\e[93mAdding private IP addresses for Kharej server 5...\e[0m'
     if [ -f "/etc/private.sh" ]; then
         rm /etc/private.sh
@@ -1063,6 +1106,11 @@ echo "+---------------------------+"
 # private IP for Iran
 function iran_private_menu() {
     clear
+echo $'\e[92m ^ ^\e[0m'
+echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
+echo $'\e[92m(   ) \e[93mConfiguring Iran server\e[0m'
+echo $'\e[92m "-"\e[93m══════════════════════════\e[0m'
+	  display_logoo
      echo -e "\e[93m.------------------------------------------------------------------------------------------------------------------------.\e[0m"
      echo -e "\e[93m| \e[92mEnter the number of your kharej servers [eg : 3].                                                 \e[0m"
 	  echo -e "\e[93m|\e[93m You use the same iran ipv4 address for each kharej servers                   \e[0m"
@@ -1334,6 +1382,10 @@ display_checkmark $'\e[92mPing service and script files created successfully for
 #5iran-1Kharej
 function private_ip_1() {
     clear
+    echo $'\e[92m ^ ^\e[0m'
+    echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
+    echo $'\e[92m(   ) \e[92m[1]\e[93mKharej - \e[92m[3]\e[93mIran private ip Menu\e[0m'
+    echo $'\e[92m "-"\e[93m════════════════════════════════\e[0m'
 	  echo -e "\e[93m.------------------------------------------------------------------------------------------------------------------------------------.\e[0m"
   echo -e "\e[93m| \e[92mEstablish the tunnel on  3 different iran server and one kharej server        \e[0m"
   echo -e "\e[93m|\e[0m Make sure to use the correct iran ipv4 addresses on kharej server as well                                                              \e[0m"
@@ -1380,6 +1432,11 @@ esac
 }
 function iran1_private_menu() {
      clear
+	  echo $'\e[92m ^ ^\e[0m'
+      echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
+      echo $'\e[92m(   ) \e[93mConfiguring Iran server 1\e[0m'
+      echo $'\e[92m "-"\e[93m══════════════════════════\e[0m'
+      	  display_logoo
      echo -e "\e[93m.------------------------------------------------------------------------------------------------------------------------------------.\e[0m"
      echo -e "\e[93m| \e[92mIf you have 3 different iran servers, make a note and assing an ipv4 address for every server. eg : server 1 : iran[1] ipv4        \e[0m"
      echo -e "\e[93m|\e[0m Since we have one kharej server, it will be the same ipv4 for every iran servers.                                                        \e[0m"
@@ -1504,6 +1561,11 @@ echo "+---------------------------+"
 #iran2
 function iran2_private_menu() {
      clear
+	  echo $'\e[92m ^ ^\e[0m'
+      echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
+      echo $'\e[92m(   ) \e[93mConfiguring Iran server 2\e[0m'
+      echo $'\e[92m "-"\e[93m══════════════════════════\e[0m'
+      echo ""
     display_notification $'\e[93mAdding private IP addresses for iran server 2...\e[0m'
     if [ -f "/etc/private.sh" ]; then
         rm /etc/private.sh
@@ -1622,6 +1684,11 @@ echo "+---------------------------+"
 #iran3
 function iran3_private_menu() {
      clear
+	  echo $'\e[92m ^ ^\e[0m'
+      echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
+      echo $'\e[92m(   ) \e[93mConfiguring Iran server 3\e[0m'
+      echo $'\e[92m "-"\e[93m══════════════════════════\e[0m'
+      echo ""
     display_notification $'\e[93mAdding private IP addresses for iran server 3...\e[0m'
     if [ -f "/etc/private.sh" ]; then
         rm /etc/private.sh
@@ -1739,6 +1806,11 @@ echo "+---------------------------+"
 #iran4
 function iran4_private_menu() {
      clear
+	  echo $'\e[92m ^ ^\e[0m'
+      echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
+      echo $'\e[92m(   ) \e[93mConfiguring Iran server 4\e[0m'
+      echo $'\e[92m "-"\e[93m══════════════════════════\e[0m'
+      echo ""
     display_notification $'\e[93mAdding private IP addresses for iran server 4...\e[0m'
     if [ -f "/etc/private.sh" ]; then
         rm /etc/private.sh
@@ -1857,6 +1929,11 @@ echo "+---------------------------+"
 #iran5
 function iran5_private_menu() {
      clear
+	  echo $'\e[92m ^ ^\e[0m'
+      echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
+      echo $'\e[92m(   ) \e[93mConfiguring Iran server 5\e[0m'
+      echo $'\e[92m "-"\e[93m══════════════════════════\e[0m'
+      echo ""
     display_notification $'\e[93mAdding private IP addresses for iran server 5...\e[0m'
     if [ -f "/etc/private.sh" ]; then
         rm /etc/private.sh
@@ -1975,6 +2052,11 @@ echo "+---------------------------+"
 # private IP for kharej
 function kharejj_private_menu() {
     clear
+echo $'\e[92m ^ ^\e[0m'
+echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
+echo $'\e[92m(   ) \e[93mConfiguring kharej server\e[0m'
+echo $'\e[92m "-"\e[93m══════════════════════════\e[0m'
+	  display_logoo
      echo -e "\e[93m.------------------------------------------------------------------------------------------------------------------------.\e[0m"
      echo -e "\e[93m| \e[92mEnter the number of your iran servers [eg : 5].                                               \e[0m"
 	 echo -e "\e[93m|\e[93m You use the same kharej ipv4 address as you've entered on iran servers.                 \e[0m"
@@ -2244,6 +2326,10 @@ display_checkmark $'\e[92mPing service and script files created successfully for
 }
 function 6to4_one() {
     clear
+    echo $'\e[92m ^ ^\e[0m'
+    echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
+    echo $'\e[92m(   ) \e[93m6to4 Menu\e[0m'
+    echo $'\e[92m "-"\e[93m════════════════════════════\e[0m'
       printf "\e[93m╭───────────────────────────────────────╮\e[0m\n"
   echo $'\e[93mChoose what to do:\e[0m'
   echo $'1. \e[92mKharej Server \e[0m'
@@ -2393,6 +2479,10 @@ EOF
 }
 function 6to4_iran() {
     clear
+    echo $'\e[92m ^ ^\e[0m'
+    echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
+    echo $'\e[92m(   ) \e[93m6to4 Iran Menu\e[0m'
+    echo $'\e[92m "-"\e[93m════════════════════════════\e[0m'
 if [ -f "/etc/6to4" ]; then
         rm /etc/6to4.sh
     fi
@@ -2514,6 +2604,10 @@ display_checkmark $'\e[92m6to4 Service has been added successfully!\e[0m'
 }
 function 6to4_any() {
     clear
+    echo $'\e[92m ^ ^\e[0m'
+    echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
+    echo $'\e[92m(   ) \e[93m6to4 \e[92mAnycast\e[93m Menu\e[0m'
+    echo $'\e[92m "-"\e[93m════════════════════════════\e[0m'
     
     printf "\e[93m╭───────────────────────────────────────╮\e[0m\n"
     echo $'\e[93mChoose what to do:\e[0m'
@@ -2543,6 +2637,10 @@ function 6to4_any() {
 
 function 6to4_any_kharej() {
     clear
+    echo $'\e[92m ^ ^\e[0m'
+    echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
+    echo $'\e[92m(   ) \e[93m6to4 Kharej  Menu\e[92m[Anycast]\e[0m'
+    echo $'\e[92m "-"\e[93m════════════════════════════\e[0m'
 if [ -f "/etc/6to4-any" ]; then
         rm /etc/6to4-any.sh
     fi
@@ -2652,6 +2750,10 @@ EOF
 
 function 6to4_any_iran() {
     clear
+    echo $'\e[92m ^ ^\e[0m'
+    echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
+    echo $'\e[92m(   ) \e[93m6to4 Iran  Menu\e[92m[Anycast]\e[0m'
+    echo $'\e[92m "-"\e[93m════════════════════════════\e[0m'
 if [ -f "/etc/6to4-any" ]; then
         rm /etc/6to4-any.sh
     fi
@@ -2761,6 +2863,11 @@ EOF
 }
 function uninstall() {
     clear
+    echo $'\e[92m ^ ^\e[0m'
+    echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
+    echo $'\e[92m(   ) \e[93mUninstall Menu\e[0m'
+    echo $'\e[92m "-"\e[93m═════════════════════\e[0m'
+	echo ""
 	printf "\e[93m╭───────────────────────────────────────╮\e[0m\n"
   echo $'\e[93mSelect what to uninstall:\e[0m'
   echo $'1. \e[0mPrivate IP - [Single Server]\e[0m'
@@ -2836,6 +2943,11 @@ function uninstall_single_menu() {
 }
 function pri_uninstall_menu() {
     clear
+    echo $'\e[92m ^ ^\e[0m'
+    echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
+    echo $'\e[92m(   ) \e[93mUninstall Menu \e[92m[5]\e[93mkharej \e[92m[1]\e[93miran\e[0m'
+    echo $'\e[92m "-"\e[93m═══════════════════════════════════\e[0m'
+	echo ""
 	printf "\e[93m╭───────────────────────────────────────╮\e[0m\n"
    echo $'\e[93mSelect what to uninstall:\e[0m'
    echo $'1. \e[92mIran\e[0m'
@@ -2984,6 +3096,11 @@ crontab -l | grep -v "@reboot /bin/bash /etc/private.sh" | crontab -
 }
 function prii_uninstall_menu() {
     clear
+    echo $'\e[92m ^ ^\e[0m'
+    echo $'\e[92m(\e[91mO,O\e[92m)\e[0m'
+    echo $'\e[92m(   ) \e[93mUninstall Menu \e[92m[1]\e[93mkharej \e[92m[5]\e[93miran\e[0m'
+    echo $'\e[92m "-"\e[93m════════════════════════════════════\e[0m'
+	echo ""
 	printf "\e[93m╭───────────────────────────────────────╮\e[0m\n"
    echo $'\e[93mSelect what to uninstall:\e[0m'
    echo $'1. \e[92mIran servers\e[0m'
