@@ -97,9 +97,9 @@ function main_menu() {
         echo -e "\e[93m╔════════════════════════════════════════════════════════════════╗\e[0m"  
         echo -e "\e[93m║           ▌║█║▌│║▌│║▌║▌█║ \e[92mMain Menu\e[93m  ▌│║▌║▌│║║▌█║▌             ║\e[0m"   
         echo -e "\e[93m╠════════════════════════════════════════════════════════════════╣\e[0m"                                
-        echo -e "4. \e[94m6to4\e[0m"
-        echo -e "5. \e[93m6to4 [Anycast]\e[0m"
-        echo -e "6. \e[91mUninstall\e[0m"
+        echo -e "1. \e[94m6to4\e[0m"
+        echo -e "2. \e[93m6to4 [Anycast]\e[0m"
+        echo -e "3. \e[91mUninstall\e[0m"
         echo "0. Exit"
           printf "\e[93m╰─────────────────────────────────────────────────────────────────╯\e[0m\n" 
         read -e -p $'\e[5mEnter your choice Please: \e[0m' choice
