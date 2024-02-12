@@ -59,11 +59,11 @@
 
 
 
-![R (a2)](https://github.com/amoangelasa/PrivateIP-Tunnel/assets/119934376/716fd45e-635c-4796-b8cf-856024e5b2b2)
+![R (a2)](https://github.com/Azumi67/PrivateIP-Tunnel/assets/119934376/716fd45e-635c-4796-b8cf-856024e5b2b2)
 **اسکریپت تانل**
 ----------------
 
 
 ```
-apt install curl -y && bash <(curl -Ls https://raw.githubusercontent.com/Azumi67/6TO4-PrivateIP_multipleSERVERS/main/6to4.sh --ipv4)
+apt install curl -y && bash <(curl -Ls https://raw.githubusercontent.com/amoangelasa/6TO4-PrivateIP_multipleSERVERS/main/6to4.sh --ipv4)
 ```
