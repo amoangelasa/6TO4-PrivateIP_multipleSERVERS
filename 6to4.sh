@@ -107,21 +107,12 @@ function main_menu() {
 
         case $choice in
 		    1)
-			    single_private_ip
+			    6to4_one
 				;;
             2)
-                private_ip_3
+                6_to4_any
                 ;;
-			3)
-                private_ip_1
-                ;;				
-            4)
-                6to4_one
-                ;;
-            5)
-                6to4_any
-                ;;
-            6)
+            3)
                 uninstall
                 ;;
             0)
